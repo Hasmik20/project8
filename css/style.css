@@ -89,7 +89,7 @@ span{
     line-height: 1.7rem;
 }
 .name{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1rem 0;
     line-height: 1.5rem;
 }
@@ -116,14 +116,15 @@ span{
     transform: translateY(8rem) rotateZ(20deg);
 }
 .modal{
-    width: 375px;
+    width: 200px;
+  
     margin: 15% auto auto;
     position: relative;
     text-align: center;
     background: #fff;
     border: 1px solid #778;
     border-radius: 5px;
-    padding: 30px 20px;
+    padding: 1.8rem 1.25rem;
     position: relative;
 }
 .modal-close{
@@ -139,9 +140,6 @@ span{
     position: absolute;
     height: 40px;
     width: 40px;
-    
-    background-color: lightgray;
-    color: white;
     border-radius: 50%;
     font-size: 20px;
     top: 50%;
@@ -157,10 +155,10 @@ span{
     color: lightgrey;
 }
 #right{
-    right: 30px;
+    right: 0px;
 }
 #left{
-    left: 30px;
+    left: 0px;
 }
 
 
@@ -189,5 +187,23 @@ footer .copyright {
     }
     header{
         position: relative;
+    }
+    .name{
+        font-size: 1.5rem;
+    }
+    .modal{
+        width: 375px;
+    }
+    /* arrow for slide */
+    #right,
+#left{
+    background-color: lightgray;
+    color: white;
+}
+    #right{
+        right: 30px;
+    }
+    #left{
+        left: 30px;
     }
 }
