@@ -126,16 +126,21 @@ fetch(urlAPI)
     let prevBtn = document.querySelector('#left');
  
     nextBtn.addEventListener('click', ()=>{
-        if(i < 12){
+        if(i < 11){
             i++;
             displayModal(i)  
-    }
+    }else if(i === 11)
+        i = 0;
+        displayModal(i)
 })
 prevBtn.addEventListener('click', ()=>{
     if(i > 0){
         i--;
         displayModal(i)
-    } 
+    } else if(i===0){
+        i = 11;
+        displayModal(i)
+    }
 })
 
 //--------serach employee
